@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Newsletter app </title>
+        <style>
+            *{font-size: 40px;}
+            body{background-color: azure;}
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>Newsletter by Vighnesh D100 </h1>
+            <form method="POST">
+                {% csrf_token %}
+                {{fm}}
+                <br><br>
+                <input type="submit" name="b1" value="Subscribe"/>
+                <input type="submit" name="b2" value="UnSubscribe"/>
+            </form> 
+            {{msg}}
+        </center>
+    </body>
+</html>

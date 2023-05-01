@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>New KC APP</title>
+   
+    <style>
+        *{font-size: 40px;}
+        .navigation{background-color: black;}
+        .navigation a{color: white;text-decoration: none;margin: 50px;}
+    </style>
+
+     </head>
+     <body>
+        <center>
+            <div class="navigation">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'locate' %}">Locate</a>
+            </div>
+            {% block content %}
+            {% endblock %}
+
+        </center>
+     </body>
+</html>

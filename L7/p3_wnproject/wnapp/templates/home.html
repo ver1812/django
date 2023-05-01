@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            App by Vighnesh D100
+        </title>
+        <style>
+            *{font-size: 50px;}
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>What next ? Form By Vighnesh Sadvilkar D100</h1>
+            <form method="POST">
+                {% csrf_token %}
+                <table>
+                    {{fm.as_table}}
+                </table>
+                <input type="submit"/>
+            </form>
+            {{msg}}
+        </center>
+    </body>
+</html>

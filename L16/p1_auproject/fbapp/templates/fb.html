@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h1>FeedBack Please</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="radio" name="f" value ="excellent" checked=True/>Excellent
+        <input type="radio" name="f" value ="fantastic" checked=True/>Fantastic
+        <input type="radio" name="f" value ="good" checked=True/>good
+
+        <br><br>
+        <input type="submit"/>
+    </form>
+    {{msg}}
+
+    {% endblock %}
